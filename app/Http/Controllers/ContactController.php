@@ -8,11 +8,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Jobs\ProcessPodcast;
 use App\Events\OrderShipped;
+use Cxp\Avatar\Facades\Avatar;
 
 class ContactController extends Controller
 {
     public function showForm()
     {
+
+        Avatar::output (' 赵 ','zhao.png');
         //分发事件
         event(new OrderShipped('我是一个事件哦'));
         //分发任务到队列

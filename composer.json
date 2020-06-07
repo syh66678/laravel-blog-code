@@ -42,7 +42,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "QuickBill\\":"app/QuickBill"
+            "QuickBill\\":"app/QuickBill",
+            "Cxp\\Avatar\\": "packages/cxp/avatar/src/"
         },
         "classmap": [
             "database/seeds",

@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //自定义扩展包，服务提供者
+        Cxp\Avatar\AvatarProvider::class,
+
     ],
 
     /*
@@ -226,6 +229,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        //自定义扩展包 ，门面
+        'Avatar' => Cxp\Avatar\Facades\Avatar::class,
 
     ],
 
